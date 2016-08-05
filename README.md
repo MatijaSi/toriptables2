@@ -7,10 +7,15 @@ updateproxy.sh is a simple bash script that changes proxy through which traffic 
 #####Usage:
 Both updateproxy.sh and toriptables2.py must have executable permissions and be placed in /usr/local/bin
 
-Changing proxy: sudo updateproxy.sh <number-of-changes> <delay-between-changes>
+Changing proxy: sudo updateproxy.sh number-of-changes delay-between-changes
+
 Remove proxy: sudo toriptables2.py -f
 
-<delay-between-changes> is by default in seconds. Also check toriptables2.py -h for additional information.
+delay-between-changes is by default in seconds. Also check toriptables2.py -h for additional information.
+
+Example (change proxy 30 times with 5 minutes delay):
+
+sudo updateproxy.sh 30 300
 
 
 #####To test:
