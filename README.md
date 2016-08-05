@@ -1,11 +1,17 @@
-# toriptables2
-Tor Iptables script is an anonymizer that sets up iptables and tor to route all services and traffic including DNS through the tor network.
+##About
 
-#####Dependencies:
-tor
+This work is based ruped24/toriptables2
+
+updateproxy.sh is a simple bash script that changes proxy through which traffic is routed with user specified interval between changes and number of changes.
 
 #####Usage:
-toriptables2.py -h
+Both updateproxy.sh and toriptables2.py must have executable permissions and be placed in /usr/local/bin
+
+Changing proxy: sudo updateproxy.sh <number-of-changes> <delay-between-changes>
+Remove proxy: sudo toriptables2.py -f
+
+<delay-between-changes> is by default in seconds. Also check toriptables2.py -h for additional information.
+
 
 #####To test:
 * http://ipchicken.com
@@ -14,6 +20,3 @@ toriptables2.py -h
 * https://ipleak.net
 * http://dnsleaktest.com
 
-###### Screenshots:
-* http://bit.ly/1otCXOn
-* http://bit.ly/1NjmDLn
