@@ -3,7 +3,7 @@
 #Change proxy every DELAY seconds for MAX times
 FILE=toriptables2.py
 COUNTER=0
-MAX=$1 #
+MAX=$1
 DELAY=$2
 
 #Check if args was received
